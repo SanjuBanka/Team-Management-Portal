@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": "u_demo",
+      "name": "Demo Admin",
+      "email": "demo@portal.app",
+      "role": "Project Manager",
+      "passwordHash": "demo",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_alice",
+      "name": "Alice Chen",
+      "email": "alice@portal.app",
+      "role": "Designer",
+      "passwordHash": "demo",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_bob",
+      "name": "Bob Patel",
+      "email": "bob@portal.app",
+      "role": "Developer",
+      "passwordHash": "demo",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Website Redesign",
+      "description": "Refresh the public marketing site with a new brand system.",
+      "startDate": "2026-05-01",
+      "endDate": "2026-06-20",
+      "status": "Active",
+      "ownerId": "u_demo",
+      "createdAt": "2026-05-01T00:00:00.000Z"
+    },
+    {
+      "id": "p2",
+      "title": "Mobile App MVP",
+      "description": "Ship the first version of the customer-facing mobile app.",
+      "startDate": "2026-04-01",
+      "endDate": "2026-07-15",
+      "status": "Active",
+      "ownerId": "u_demo",
+      "createdAt": "2026-04-01T00:00:00.000Z"
+    },
+    {
+      "id": "p3",
+      "title": "Q4 Marketing Campaign",
+      "description": "Plan and execute the end-of-year promotional push.",
+      "startDate": "2026-05-20",
+      "endDate": "2026-08-20",
+      "status": "Planning",
+      "ownerId": "u_demo",
+      "createdAt": "2026-05-20T00:00:00.000Z"
+    }
+  ],
+  "tasks": [
+    { "id": "t1", "title": "Audit current site content", "description": "Inventory all pages and assets.", "projectId": "p1", "assigneeId": "u_alice", "priority": "Medium", "status": "Completed", "dueDate": "2026-05-10", "createdAt": "2026-04-20T00:00:00.000Z" },
+    { "id": "t2", "title": "Design new homepage", "description": "Create three concepts in Figma.", "projectId": "p1", "assigneeId": "u_alice", "priority": "High", "status": "In Progress", "dueDate": "2026-06-05", "createdAt": "2026-05-01T00:00:00.000Z" },
+    { "id": "t3", "title": "Implement hero section", "description": "Code the chosen homepage hero.", "projectId": "p1", "assigneeId": "u_bob", "priority": "High", "status": "Pending", "dueDate": "2026-06-12", "createdAt": "2026-05-02T00:00:00.000Z" }
+  ]
+}
